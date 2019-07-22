@@ -10,7 +10,7 @@ class ObjectCollectionTest extends TestCase
      */
     public function testCollectionObjectAlreadyExists(): ?\StdClass
     {
-        // We are expecting the ObjectAlreadyExistsException to be thrown...
+        // We are expecting the Exception to be thrown ...
         $this->expectException(\Exceptions\Collection\ObjectAlreadyExistsException::class);
 
         // Let's get the exception to throw
