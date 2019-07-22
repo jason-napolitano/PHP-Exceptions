@@ -15,7 +15,7 @@
      * @since   0.0.1
      * @license MIT <https://opensource.org/licenses/MIT>
      */
-    class FileSystemException extends \RuntimeException implements ExceptionInterface
+    class FileSystemException extends \DomainException implements ExceptionInterface
     {
         /**
          * The exception message

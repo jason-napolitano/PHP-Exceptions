@@ -15,7 +15,7 @@
 	 * @since   0.0.1
 	 * @license MIT <https://opensource.org/licenses/MIT>
 	 */
-	class CollectionException extends \RuntimeException implements ExceptionInterface
+	class CollectionException extends \LogicException implements ExceptionInterface
 	{
 		/**
 		 * The exception message
