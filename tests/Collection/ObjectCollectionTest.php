@@ -13,6 +13,7 @@ class ObjectCollectionTest extends TestCase
         // We are expecting the ObjectAlreadyExistsException to be thrown...
         $this->expectException(\Exceptions\Collection\ObjectAlreadyExistsException::class);
 
+        // Let's get the exception to throw
         $obj = new StdClass();
 
         if (isset($obj)) {
@@ -33,6 +34,7 @@ class ObjectCollectionTest extends TestCase
         // We are expecting the ObjectNotExistsException to be thrown...
         $this->expectException(\Exceptions\Collection\ObjectNotExistsException::class);
 
+        // Let's get the exception to throw
         $obj = null;
 
         if ( ! is_object($obj)) {
