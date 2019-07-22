@@ -31,7 +31,7 @@ class ObjectCollectionTest extends TestCase
      */
     public function testCollectionObjectNotExists(): ?\StdClass
     {
-        // We are expecting the ObjectNotExistsException to be thrown...
+        // We are expecting the Exception to be thrown ...
         $this->expectException(\Exceptions\Collection\ObjectNotExistsException::class);
 
         // Let's get the exception to throw

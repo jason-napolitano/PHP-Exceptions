@@ -3,7 +3,6 @@
     /**
      * BadFunctionCallException class
      *
-     *
      * This exception is thrown if a callback refers to
      * an undefined function or if some arguments are missing.
      *

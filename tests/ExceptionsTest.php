@@ -10,7 +10,7 @@ class ExceptionsTest extends TestCase
      */
     public function testInvalidArgumentException(): void
     {
-        // We are expecting the ArrayKeyNotExistsException to be thrown...
+        // We are expecting the Exception to be thrown ...
         $this->expectException(\Exceptions\InvalidArgumentException::class);
 
         // Let's get the exception to throw
