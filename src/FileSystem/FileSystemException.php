@@ -1,6 +1,6 @@
 <?php namespace Exceptions\FileSystem {
 
-    use Exceptions\ExceptionInterface;
+    use Exceptions\DomainException;
 
     /**
      * FileSystemException
@@ -15,7 +15,7 @@
      * @since   0.0.1
      * @license MIT <https://opensource.org/licenses/MIT>
      */
-    class FileSystemException extends \DomainException implements ExceptionInterface
+    class FileSystemException extends DomainException
     {
         /**
          * The exception message

@@ -1,6 +1,5 @@
 <?php namespace Exceptions\Collection {
-
-	use Exceptions\ExceptionInterface;
+	use Exceptions\LogicException;
 
 	/**
 	 * CollectionException
@@ -15,7 +14,7 @@
 	 * @since   0.0.1
 	 * @license MIT <https://opensource.org/licenses/MIT>
 	 */
-	class CollectionException extends \LogicException implements ExceptionInterface
+	class CollectionException extends LogicException
 	{
 		/**
 		 * The exception message
