@@ -1,7 +1,7 @@
 <?php namespace Exceptions\FileSystem {
 
     /**
-     * DirectoryAlreadyExistsException
+     * DirectoryAlreadyExistsException class
      *
      * The DirectoryAlreadyExistsException indicates that a directory
      * already exists

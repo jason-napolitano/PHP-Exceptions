@@ -1,7 +1,7 @@
 <?php namespace Exceptions\Collection {
 
     /**
-     * ArrayKeyNotExistsException
+     * ArrayKeyNotExistsException class
      *
      * Indicates that a specified array key does not exist
      *

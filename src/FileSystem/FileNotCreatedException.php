@@ -1,7 +1,7 @@
 <?php namespace Exceptions\FileSystem {
 
     /**
-     * FileNotCreatedException
+     * FileNotCreatedException class
      *
      * The FileNotCreatedException indicates that a file
      * was not created

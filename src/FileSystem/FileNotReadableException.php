@@ -1,7 +1,7 @@
 <?php namespace Exceptions\FileSystem {
 
     /**
-     * FileNotReadableException
+     * FileNotReadableException class
      *
      * The FileNotReadableException indicates that a file
      * is not readable

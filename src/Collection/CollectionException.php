@@ -2,7 +2,7 @@
 	use Exceptions\LogicException;
 
 	/**
-	 * CollectionException
+	 * CollectionException class
 	 *
 	 * A base class for more generic collection related exceptions
 	 * to extend

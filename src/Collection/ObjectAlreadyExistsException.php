@@ -1,7 +1,7 @@
 <?php namespace Exceptions\Collection {
 
 	/**
-	 * ObjectAlreadyExistsException
+	 * ObjectAlreadyExistsException class
 	 *
 	 * Indicates that a specified object already exists
 	 *

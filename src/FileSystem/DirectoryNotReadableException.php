@@ -1,7 +1,7 @@
 <?php namespace Exceptions\FileSystem {
 
     /**
-     * DirectoryNotReadableException
+     * DirectoryNotReadableException class
      *
      * The DirectoryNotReadableException indicates that a directory
      * not readable

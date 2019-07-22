@@ -1,7 +1,7 @@
 <?php namespace Exceptions\FileSystem {
 
     /**
-     * DirectoryNotCreatedException
+     * DirectoryNotCreatedException class
      *
      * The DirectoryNotCreatedException indicates that a directory
      * was not created

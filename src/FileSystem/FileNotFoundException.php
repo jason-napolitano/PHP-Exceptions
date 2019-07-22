@@ -1,7 +1,7 @@
 <?php namespace Exceptions\FileSystem {
 
     /**
-     * FileNotFoundException
+     * FileNotFoundException class
      *
      * The FileNotFoundException indicates that a file
      * cannot be found

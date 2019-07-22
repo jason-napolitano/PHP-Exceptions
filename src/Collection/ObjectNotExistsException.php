@@ -1,7 +1,7 @@
 <?php namespace Exceptions\Collection {
 
     /**
-     * ObjectNotExistsException
+     * ObjectNotExistsException class
      *
      * Indicates that a specified object does not exist
      *

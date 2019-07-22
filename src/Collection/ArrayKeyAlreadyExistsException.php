@@ -1,7 +1,7 @@
 <?php namespace Exceptions\Collection {
 
     /**
-     * ArrayKeyAlreadyExistsException
+     * ArrayKeyAlreadyExistsException class
      *
      * Indicates that a specified array key already exists
      *

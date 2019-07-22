@@ -1,7 +1,7 @@
 <?php namespace Exceptions\FileSystem {
 
     /**
-     * DirectoryNotFoundException
+     * DirectoryNotFoundException class
      *
      * The DirectoryNotFoundException indicates that a directory
      * cannot be found

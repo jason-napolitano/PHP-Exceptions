@@ -1,7 +1,7 @@
 <?php namespace Exceptions\FileSystem {
 
     /**
-     * FileNotDeletedException
+     * FileNotDeletedException class
      *
      * The FileNotDeletedException indicates that a file
      * was not deleted

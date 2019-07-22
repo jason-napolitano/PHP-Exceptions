@@ -1,7 +1,7 @@
 <?php namespace Exceptions\FileSystem {
 
     /**
-     * DirectoryNotModifiedException
+     * DirectoryNotModifiedException class
      *
      * The DirectoryNotModifiedException indicates that a directory
      * was not modified

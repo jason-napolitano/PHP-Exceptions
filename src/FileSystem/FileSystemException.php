@@ -3,7 +3,7 @@
     use Exceptions\DomainException;
 
     /**
-     * FileSystemException
+     * FileSystemException class
      *
      * A base class for more generic file system related exceptions
      * to extend

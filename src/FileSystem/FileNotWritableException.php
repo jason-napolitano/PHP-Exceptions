@@ -1,7 +1,7 @@
 <?php namespace Exceptions\FileSystem {
 
     /**
-     * FileNotWritableException
+     * FileNotWritableException class
      *
      * The FileNotWritableException indicates that a file
      * is not writable

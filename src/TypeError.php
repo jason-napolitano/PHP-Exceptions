@@ -1,6 +1,8 @@
 <?php namespace Exceptions {
 
     /**
+     * TypeError class
+     *
      * There are three scenarios where a TypeError may be thrown.
      * The first is where the argument type being passed to a function does not
      * match its corresponding declared parameter type.
@@ -10,6 +12,11 @@
      * PHP function (strict mode only).
      *
      * @package Exceptions
+     *
+     * @author  Jason Napolitano <https://github.com/jason-napolitano>
+     * @version 0.0.1
+     * @since   0.0.1
+     * @license MIT <https://opensource.org/licenses/MIT>
      */
     class TypeError extends \TypeError implements ExceptionInterface
     {

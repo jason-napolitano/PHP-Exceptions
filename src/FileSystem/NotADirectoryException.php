@@ -1,7 +1,7 @@
 <?php namespace Exceptions\FileSystem {
 
     /**
-     * NotADirectoryException
+     * NotADirectoryException class
      *
      * The NotADirectoryException indicates that a path
      * is not directory

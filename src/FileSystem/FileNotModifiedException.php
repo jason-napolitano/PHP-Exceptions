@@ -1,7 +1,7 @@
 <?php namespace Exceptions\FileSystem {
 
     /**
-     * FileNotModifiedException
+     * FileNotModifiedException class
      *
      * The FileNotModifiedException indicates that a file
      * was not modified

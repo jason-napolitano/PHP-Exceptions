@@ -1,7 +1,7 @@
 <?php namespace Exceptions\FileSystem {
 
     /**
-     * NotAFileException
+     * NotAFileException class
      *
      * The NotAFileException indicates that a path
      * is not file
