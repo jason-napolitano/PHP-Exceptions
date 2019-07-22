@@ -13,10 +13,9 @@ class ArrayCollectionTest extends TestCase
         // We are expecting the Exception to be thrown ...
         $this->expectException(\Exceptions\Collection\ArrayKeyNotExistsException::class);
 
-        // Let's build the test logic and see if it does...
+        // Let's get the exception to throw
         $var = ['name' => 'Name'];
 
-        // Let's get the exception to throw
         if ( ! array_key_exists('dob', $var)) {
             // Throw the exception
             throw new \Exceptions\Collection\ArrayKeyNotExistsException();
@@ -33,10 +32,9 @@ class ArrayCollectionTest extends TestCase
         // We are expecting the Exception to be thrown ...
         $this->expectException(\Exceptions\Collection\ArrayKeyAlreadyExistsException::class);
 
-        // Let's build the test logic and see if it does...
+        // Let's get the exception to throw
         $var = ['name' => 'Name'];
 
-        // Let's get the exception to throw
         if (array_key_exists('name', $var)) {
             // Throw the exception
             throw new \Exceptions\Collection\ArrayKeyAlreadyExistsException();
@@ -53,10 +51,9 @@ class ArrayCollectionTest extends TestCase
         // We are expecting the Exception to be thrown ...
         $this->expectException(\Exceptions\Collection\ArrayNotExistsException::class);
 
-        // Let's build the test logic and see if it does...
+        // Let's get the exception to throw
         $var = null;
 
-        // Let's get the exception to throw
         if ( ! is_array($var)) {
             // Throw the exception
             throw new \Exceptions\Collection\ArrayNotExistsException();
