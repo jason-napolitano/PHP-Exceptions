@@ -5,7 +5,9 @@
  */
 class ExceptionsTest extends TestCase
 {
-    // ...
+    /**
+     * @return void
+     */
     public function testInvalidArgumentException()
     {
         // We are expecting the ArrayKeyNotExistsException to be thrown...
@@ -19,5 +21,6 @@ class ExceptionsTest extends TestCase
         }
         test_me('string');
     }
+
     //-------------------------------------------------------------------------
 }

@@ -6,7 +6,7 @@
 class ArrayCollectionTest extends TestCase
 {
     /**
-     * Does an ArrayKeyNotExistsException get thrown?
+     * @return void
      */
     public function testCollectionArrayKeyNotExists(): void
     {
@@ -26,7 +26,7 @@ class ArrayCollectionTest extends TestCase
     //-------------------------------------------------------------------------
 
     /**
-     * Does an ArrayKeyAlreadyExistsException get thrown?
+     * @return void
      */
     public function testCollectionArrayKeyAlreadyExists(): void
     {
@@ -46,7 +46,7 @@ class ArrayCollectionTest extends TestCase
     //-------------------------------------------------------------------------
 
     /**
-     * Does an ArrayNotExistsException get thrown?
+     * @return void
      */
     public function testCollectionArrayNotExists(): void
     {
