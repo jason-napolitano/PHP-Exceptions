@@ -8,7 +8,7 @@ class ExceptionsTest extends TestCase
     /**
      * @return void
      */
-    public function testInvalidArgumentException()
+    public function testInvalidArgumentException(): void
     {
         // We are expecting the ArrayKeyNotExistsException to be thrown...
         $this->expectException(\Exceptions\InvalidArgumentException::class);
