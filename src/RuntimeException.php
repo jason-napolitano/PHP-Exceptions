@@ -13,7 +13,7 @@
      * @since   0.0.1
      * @license MIT <https://opensource.org/licenses/MIT>
      */
-    class RuntimeException extends \RangeException implements ExceptionInterface
+    class RuntimeException extends \RuntimeException implements ExceptionInterface
     {
         // ...
     }
