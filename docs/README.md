@@ -62,7 +62,7 @@ Hopefully I can dish these out and release v 1.0.0:
     - [x] Finish current `ExceptionTest` tests
     - [x] Finish current `Collection\\` tests
     - [x] Finish current `Operation\\` tests
-    - [x] Finish current `FileSystem\\` tests
+    - [ ] Finish current `FileSystem\\` tests
     
   - Finish the following exceptions
     - [ ] `\Exceptions\HTTP`
