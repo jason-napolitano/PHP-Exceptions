@@ -7,11 +7,12 @@ inspiration from [`crazycodr/standard-exceptions`](https://github.com/crazycodr/
 Framework versions will be available shortly after the official v.1.0 release.
 
 As said by [Arnout Boks](https://www.moxio.com/blog/34/best-practices-for-php-exception-handling):
-"Proper exception handling takes quite some effort, but will eventually result in a much more stable 
+
+"_Proper exception handling takes quite some effort, but will eventually result in a much more stable 
 application. A sensible exception handling strategy makes it clear what exceptions should be expected 
 (and thus handled!) at a given point in the code. Moreover it will maintain the encapsulation and 
 abstraction you carefully applied to your object-oriented design. Last but not least, it should make 
-debugging a breeze."
+debugging a breeze._"
 
 Proper Exception handling is a must in PHP applications, and application development in general. 
 This library hopes to encourage developers to properly handle exceptions, by giving them a variety of
