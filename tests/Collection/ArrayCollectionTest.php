@@ -2,6 +2,15 @@
 
 /**
  * ArrayCollectionTest Test Case
+ *
+ * This test case is used to ensure that the exceptions within the
+ * Exceptions\Collection\* namespace are properly thrown under the
+ * correct set of conditions
+ *
+ * @author  Jason Napolitano <https://github.com/jason-napolitano>
+ * @version 0.0.1
+ * @since   0.0.1
+ * @license MIT <https://opensource.org/licenses/MIT>
  */
 class ArrayCollectionTest extends TestCase
 {

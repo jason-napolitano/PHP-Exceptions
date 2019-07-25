@@ -2,6 +2,15 @@
 
 /**
  * ExceptionsTest Test Case
+ *
+ * This test case is used to ensure that the exceptions within the
+ * Exceptions\ namespace are properly thrown under the correct set
+ * of conditions
+ *
+ * @author  Jason Napolitano <https://github.com/jason-napolitano>
+ * @version 0.0.1
+ * @since   0.0.1
+ * @license MIT <https://opensource.org/licenses/MIT>
  */
 class ExceptionsTest extends TestCase
 {
@@ -50,30 +59,6 @@ class ExceptionsTest extends TestCase
         }
 
         divide(0, 0);
-    }
-
-    //-------------------------------------------------------------------------
-
-    /**
-     * Here, we are expecting the \Exceptions\Operation\DivideByNegativeNumberError
-     * to be thrown
-     *
-     * @return void|mixed
-     */
-    public function testExpectDivideByNegativeNumberError()
-    {
-        // We are expecting the Exception to be thrown ...
-        $this->expectException(\Exceptions\Operation\DivideByNegativeNumberError::class);
-
-        function divide_2($dividend, $divisor)
-        {
-            if ($divisor < 0 || $dividend < 0) {
-                throw new \Exceptions\Operation\DivideByNegativeNumberError();
-            }
-            return $dividend / $divisor;
-        }
-
-        divide_2(0, -1);
     }
 
     //-------------------------------------------------------------------------
