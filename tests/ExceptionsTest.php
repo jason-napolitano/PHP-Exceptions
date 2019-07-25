@@ -116,7 +116,6 @@ class ExceptionsTest extends TestCase
         // Let's get the exception to throw
         $_POST['unset_value'] = null;
         $post = $_POST['unset_value'];
-        unset($post);
 
         if ( ! isset($post)) {
             throw new \Exceptions\OutOfBoundsException();
