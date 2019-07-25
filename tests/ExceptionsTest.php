@@ -10,9 +10,9 @@ class ExceptionsTest extends TestCase
      * Here, we are expecting the \Exceptions\BadFunctionCallException to
      * be thrown
      *
-     * @return void
+     * @return void|mixed
      */
-    public function testExpectBadFunctionCallException(): void
+    public function testExpectBadFunctionCallException()
     {
         // We are expecting the Exception to be thrown ...
         $this->expectException(\Exceptions\BadFunctionCallException::class);
@@ -34,14 +34,14 @@ class ExceptionsTest extends TestCase
      * Here, we are expecting the \Exceptions\RuntimeException to
      * be thrown
      *
-     * @return void
+     * @return void|mixed
      */
-    public function testExpectRuntimeExceptionException(): void
+    public function testExpectRuntimeExceptionException()
     {
         // We are expecting the Exception to be thrown ...
         $this->expectException(\Exceptions\RuntimeException::class);
 
-        function divide($dividend = 0, $divisor = 0)
+        function divide($dividend, $divisor)
         {
             if ($divisor === 0) {
                 throw new \Exceptions\RuntimeException();
@@ -49,7 +49,7 @@ class ExceptionsTest extends TestCase
             return $dividend / $divisor;
         }
 
-        divide();
+        divide(0, 0);
     }
 
     //-------------------------------------------------------------------------
@@ -58,9 +58,9 @@ class ExceptionsTest extends TestCase
      * Here, we are expecting the \Exceptions\InvalidArgumentException to
      * be thrown
      *
-     * @return void
+     * @return void|mixed
      */
-    public function testExpectInvalidArgumentException(): void
+    public function testExpectInvalidArgumentException()
     {
         // We are expecting the Exception to be thrown ...
         $this->expectException(\Exceptions\InvalidArgumentException::class);
@@ -82,21 +82,26 @@ class ExceptionsTest extends TestCase
      * Here, we are expecting the \Exceptions\OutOfBoundsException to
      * be thrown
      *
-     * @return void
+     * @return void|mixed
      */
-    public function testExpectOutOfBoundsException(): void
+    public function testExpectOutOfBoundsException()
     {
         // We are expecting the Exception to be thrown ...
         $this->expectException(\Exceptions\OutOfBoundsException::class);
 
         // Let's get the exception to throw
-        unset($_POST);
+        $_POST['unset_value'] = null;
+        $post = $_POST['unset_value'];
+        unset($post);
 
-        if ( ! isset($_POST['unset_value'])) {
+        if ( ! isset($post)) {
             throw new \Exceptions\OutOfBoundsException();
         } else {
-            $_POST['unset_value'] = 'new_value';
+            $post = 'new_value';
         }
+
+        $this->assertIsNotString($post);
+        $this->assertNotNull($post);
     }
 
     //-------------------------------------------------------------------------
@@ -105,9 +110,9 @@ class ExceptionsTest extends TestCase
      * Here, we are expecting the \Exceptions\OutOfRangeException to
      * be thrown
      *
-     * @return void
+     * @return void|mixed
      */
-    public function testExpectOutOfRangeException(): void
+    public function testExpectOutOfRangeException()
     {
         // We are expecting the Exception to be thrown ...
         $this->expectException(\Exceptions\OutOfRangeException::class);
@@ -118,8 +123,10 @@ class ExceptionsTest extends TestCase
         if ($var > 10) {
             throw new \Exceptions\OutOfRangeException();
         } else {
-            echo "Hooray! {$var} is less than 10!";
+            $var /= 100;
         }
+
+        $this->assertIsNotInt($var);
     }
 
     //-------------------------------------------------------------------------
