@@ -124,7 +124,6 @@ class ExceptionsTest extends TestCase
         }
 
         $this->assertIsNotString($post);
-        $this->assertNotNull($post);
     }
 
     //-------------------------------------------------------------------------
