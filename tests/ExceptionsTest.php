@@ -18,14 +18,14 @@ class ExceptionsTest extends TestCase
         $this->expectException(\Exceptions\BadFunctionCallException::class);
 
         // Let's get the exception to throw
-        function func1(callable $func = null)
+        function load_callable(callable $func = null)
         {
             if ( ! is_callable($func)) {
                 throw new \Exceptions\BadFunctionCallException();
             }
         }
 
-        func1();
+        load_callable();
     }
 
     //-------------------------------------------------------------------------
@@ -66,14 +66,14 @@ class ExceptionsTest extends TestCase
         $this->expectException(\Exceptions\InvalidArgumentException::class);
 
         // Let's get the exception to throw
-        function func2($x)
+        function requires_int($x)
         {
             if ( ! is_int($x)) {
                 throw new \Exceptions\InvalidArgumentException();
             }
         }
 
-        func2('string');
+        requires_int('string');
     }
 
     //-------------------------------------------------------------------------
