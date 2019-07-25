@@ -26,6 +26,7 @@ class OperationTest extends TestCase
         // We are expecting the Exception to be thrown ...
         $this->expectException(\Exceptions\Operation\DivideByNegativeNumberError::class);
 
+        // Let's get the exception to throw
         function divide_2($dividend, $divisor)
         {
             if ($divisor < 0 || $dividend < 0) {
