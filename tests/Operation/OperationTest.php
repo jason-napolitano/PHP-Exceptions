@@ -27,15 +27,15 @@ class OperationTest extends TestCase
         $this->expectException(\Exceptions\Operation\DivideByNegativeNumberError::class);
 
         // Let's get the exception to throw
-        function divide_by($dividend, $divisor)
+        function divide_ten_by($dividend)
         {
-            if ($divisor < 0 || $dividend < 0) {
+            if ($dividend < 0) {
                 throw new \Exceptions\Operation\DivideByNegativeNumberError();
             }
-            return $dividend / $divisor;
+            return $dividend / 10;
         }
 
-        divide_by(0, -1);
+        divide_ten_by(-1);
     }
 
     //-------------------------------------------------------------------------
