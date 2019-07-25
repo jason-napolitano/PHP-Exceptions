@@ -31,25 +31,49 @@ class ExceptionsTest extends TestCase
     //-------------------------------------------------------------------------
 
     /**
-     * Here, we are expecting the \Exceptions\RuntimeException to
+     * Here, we are expecting the \Exceptions\DivisionByZeroError to
      * be thrown
      *
      * @return void|mixed
      */
-    public function testExpectRuntimeExceptionException()
+    public function testExpectDivisionByZeroError()
     {
         // We are expecting the Exception to be thrown ...
-        $this->expectException(\Exceptions\RuntimeException::class);
+        $this->expectException(\Exceptions\DivisionByZeroError::class);
 
         function divide($dividend, $divisor)
         {
             if ($divisor === 0) {
-                throw new \Exceptions\RuntimeException();
+                throw new \Exceptions\DivisionByZeroError();
             }
             return $dividend / $divisor;
         }
 
         divide(0, 0);
+    }
+
+    //-------------------------------------------------------------------------
+
+    /**
+     * Here, we are expecting the \Exceptions\Operation\DivideByNegativeNumberError
+     * to be thrown
+     *
+     * @return void|mixed
+     */
+    public function testExpectDivideByNegativeNumberError()
+    {
+        // We are expecting the Exception to be thrown ...
+        $this->expectException(\Exceptions\Operation\DivideByNegativeNumberError::class);
+
+        function divide_2($dividend, $divisor)
+        {
+            if ($divisor < 0 || $dividend < 0) {
+                throw new \Exceptions\Operation\DivideByNegativeNumberError();
+            }
+            return $dividend / $divisor;
+        }
+
+        divide_2(0, -1);
     }
 
     //-------------------------------------------------------------------------
