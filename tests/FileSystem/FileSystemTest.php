@@ -30,11 +30,7 @@ class FileSystemTest extends TestCase
 
         if ( ! file_exists($file)) {
             throw new \Exceptions\FileSystem\FileNotFoundException();
-        } else {
-            $file = null;
         }
-
-        $this->assertNotNull($file);
     }
 
     //-------------------------------------------------------------------------
@@ -55,13 +51,31 @@ class FileSystemTest extends TestCase
 
         if (  file_exists($dir)) {
             throw new \Exceptions\FileSystem\DirectoryAlreadyExistsException();
-        } else {
-            $dir = false;
-            return $dir;
         }
 
-        $this->assertTrue($dir);
+    }
 
+    //-------------------------------------------------------------------------
+
+    //-------------------------------------------------------------------------
+
+    /**
+     * Here, we are expecting the \Exceptions\FileSystem\DirectoryNotFoundException
+     * to be thrown
+     *
+     * @return void|mixed
+     */
+    public function testExpectDirectoryNotFoundException()
+    {
+        // We are expecting the Exception to be thrown ...
+        $this->expectException(\Exceptions\FileSystem\DirectoryNotFoundException::class);
+
+        // Let's get the exception to throw
+        $dir = __DIR__ . '/non-existent/directory';
+
+        if ( ! file_exists($dir)) {
+            throw new \Exceptions\FileSystem\DirectoryNotFoundException();
+        }
     }
 
     //-------------------------------------------------------------------------

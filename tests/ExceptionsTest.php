@@ -104,12 +104,7 @@ class ExceptionsTest extends TestCase
 
         if ( ! isset($post)) {
             throw new \Exceptions\OutOfBoundsException();
-        } else {
-            $post = 'new_value';
         }
-
-        $this->assertIsNotString($post);
-        $this->assertNull($post);
     }
 
     //-------------------------------------------------------------------------
@@ -130,11 +125,7 @@ class ExceptionsTest extends TestCase
 
         if ($var > 10) {
             throw new \Exceptions\OutOfRangeException();
-        } else {
-            $var /= 100;
         }
-
-        $this->assertIsNotInt($var);
     }
 
     //-------------------------------------------------------------------------
