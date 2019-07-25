@@ -11,6 +11,7 @@ Framework versions will be available shortly after the official v.1.0 release.
  - [Useful Links](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#useful-links)
  - [Requirements](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#requirements)
  - [Installation](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#installation)
+ - [TODO](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#todo)
  - [License](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#license)
  
 ## Useful Links
@@ -53,6 +54,37 @@ try {
 	echo 'Caught Exception: ',  $e->getMessage(), "\n";
 }
 ```
+
+## TODO
+Hopefully I can dish these out and release v 1.0.0:
+
+  - Finish Unit Testing
+    - [x] Finish current `ExceptionTest` tests
+    - [x] Finish current `Operation\\` tests
+    - [x] Finish current `Operation\\` tests
+    - [ ] Finish current `FileSystem\\` tests
+    
+  - Finish the following exceptions
+    - [ ] `\Exceptions\HTTP`
+    - [ ] `\Exceptions\Intl`
+    - [ ] Add tests for the above
+    
+  - Create new exception namespaces
+    - [ ] `\Exceptions\Authentication\*`
+    - [ ] `\Exceptions\Authorization\*`
+    - [ ] `\Exceptions\Encryption\*`
+    - [ ] Add tests for the above
+    
+  - Create helper files (Traits)
+    - [ ] Create `Exceptions\Authentication\HelperTrait`
+    - [ ] Create `Exceptions\Authorization\HelperTrait`
+    - [ ] Create `Exceptions\FileSystem\HelperTrait`
+    - [ ] Create `Exceptions\Collection\HelperTrait`
+    - [ ] Create `Exceptions\Encryption\HelperTrait`
+    - [ ] Create `Exceptions\Operation\HelperTrait`
+    - [ ] Create `Exceptions\HTTP\HelperTrait`
+    - [ ] Create `Exceptions\Intl\HelperTrait`
+    - [ ] Create `Exceptions\HelperTrait`
 
  ## License
  ### MIT License

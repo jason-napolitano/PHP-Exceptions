@@ -56,6 +56,8 @@ try {
 ```
 
 ## TODO
+Hopefully I can dish these out and release v 1.0.0:
+
   - Finish Unit Testing
     - [x] Finish current `ExceptionTest` tests
     - [x] Finish current `Operation\\` tests
