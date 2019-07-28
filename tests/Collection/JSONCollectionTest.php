@@ -1,35 +1,41 @@
-<?php use PHPUnit\Framework\TestCase;
+<?php namespace Tests\Collection {
 
-/**
- * JSONCollectionTest Test Case
- *
- * This test case is used to ensure that the exceptions within the
- * Exceptions\Collection\* namespace are properly thrown under the
- * correct set of conditions
- *
- * @author  Jason Napolitano <https://github.com/jason-napolitano>
- * @version 0.0.1
- * @since   0.0.1
- * @license MIT <https://opensource.org/licenses/MIT>
- */
-class JSONCollectionTest extends TestCase
-{
+    use PHPUnit\Framework\TestCase;
+
     /**
-     * @return void
+     * JSONCollectionTest Test Case
+     *
+     * This test case is used to ensure that the exceptions within the
+     * Exceptions\Collection\* namespace are properly thrown under the
+     * correct set of conditions
+     *
+     * @package Tests\Collection
+     *
+     * @author  Jason Napolitano <https://github.com/jason-napolitano>
+     * @version 0.0.1
+     * @since   0.0.1
+     * @license MIT <https://opensource.org/licenses/MIT>
      */
-    public function testExceptInvalidJSONException(): void
+    class JSONCollectionTest extends TestCase
     {
-        // We are expecting the Exception to be thrown ...
-        $this->expectException(\Exceptions\Collection\InvalidJSONException::class);
+        /**
+         * @return void
+         */
+        public function testExceptInvalidJSONException(): void
+        {
+            // We are expecting the Exception to be thrown ...
+            $this->expectException(\Exceptions\Collection\InvalidJSONException::class);
 
-        // Let's get the exception to throw
-        $var = '{ "name": "My Name", "age": "25, }';
+            // Let's get the exception to throw
+            $var = '{ "name": "My Name", "age": "25, }';
 
-        if ( ! json_decode($var) ) {
-            // Throw the exception
-            throw new \Exceptions\Collection\InvalidJSONException();
+            if ( ! json_decode($var) ) {
+                // Throw the exception
+                throw new \Exceptions\Collection\InvalidJSONException();
+            }
         }
+
+        //-------------------------------------------------------------------------
     }
 
-    //-------------------------------------------------------------------------
 }

@@ -1,36 +1,42 @@
-<?php use PHPUnit\Framework\TestCase;
+<?php namespace Tests\Intl {
 
-/**
- * IntlTest Test Case
- *
- * This test case is used to ensure that the exceptions within the
- * Exceptions\Intl\* namespace are properly thrown under the correct
- * set of conditions
- *
- * @author  Jason Napolitano <https://github.com/jason-napolitano>
- * @version 0.0.1
- * @since   0.0.1
- * @license MIT <https://opensource.org/licenses/MIT>
- */
-class IntlTest extends TestCase
-{
+    use PHPUnit\Framework\TestCase;
+
     /**
-     * Here, we are expecting the \Exceptions\Intl\IntlException
-     * to be thrown
+     * IntlTest Test Case
      *
-     * @return void|mixed
+     * This test case is used to ensure that the exceptions within the
+     * Exceptions\Intl\* namespace are properly thrown under the correct
+     * set of conditions
+     *
+     * @package Tests\Intl
+     *
+     * @author  Jason Napolitano <https://github.com/jason-napolitano>
+     * @version 0.0.1
+     * @since   0.0.1
+     * @license MIT <https://opensource.org/licenses/MIT>
      */
-    public function testExpectIntlException()
+    class IntlTest extends TestCase
     {
-        // We are expecting the Exception to be thrown ...
-        $this->expectException(\Exceptions\Intl\IntlException::class);
+        /**
+         * Here, we are expecting the \Exceptions\Intl\IntlException
+         * to be thrown
+         *
+         * @return void|mixed
+         */
+        public function testExpectIntlException()
+        {
+            // We are expecting the Exception to be thrown ...
+            $this->expectException(\Exceptions\Intl\IntlException::class);
 
-        // Simple test
-        if ( 2 > 1 ) {
-            throw new \Exceptions\Intl\IntlException();
+            // Simple test
+            if ( 2 > 1 ) {
+                throw new \Exceptions\Intl\IntlException();
+            }
+
         }
 
+        //-------------------------------------------------------------------------
     }
 
-    //-------------------------------------------------------------------------
 }

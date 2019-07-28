@@ -13,7 +13,8 @@
   },
   "autoload": {
     "psr-4": {
-      "Exceptions\\": "./src"
+      "Exceptions\\": "./src",
+      "Tests\\": "./tests"
     }
   }
 }
