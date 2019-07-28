@@ -40,7 +40,7 @@ throw new \Exceptions\Collection\InvalidJSONException();
 
 Arithmetic
 ```php
-throw new \Exceptions\Collection\DivideByNegativeNumberException();
+throw new \Exceptions\Operation\DivideByNegativeNumberException();
 ```
 
 Revised PHP SPL's
