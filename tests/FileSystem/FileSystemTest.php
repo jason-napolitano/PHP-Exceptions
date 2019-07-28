@@ -26,7 +26,7 @@ class FileSystemTest extends TestCase
         $this->expectException(\Exceptions\FileSystem\FileNotFoundException::class);
 
         // Let's get the exception to throw
-        $file = __DIR__ . 'assets/image_0.png';
+        $file = __DIR__ . 'directory/image_0.png';
 
         if ( ! file_exists($file)) {
             throw new \Exceptions\FileSystem\FileNotFoundException();
@@ -47,7 +47,7 @@ class FileSystemTest extends TestCase
         $this->expectException(\Exceptions\FileSystem\DirectoryAlreadyExistsException::class);
 
         // Let's get the exception to throw
-        $dir = __DIR__ . '/assets';
+        $dir = __DIR__ . '/directory';
 
         if (  file_exists($dir)) {
             throw new \Exceptions\FileSystem\DirectoryAlreadyExistsException();
