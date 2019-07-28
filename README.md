@@ -1,8 +1,8 @@
 # PHP Exceptions
  
 ## Synopsis
-Practical Exceptions is an attempt to contain all different kinds of generic exceptions 
-that are not within PHP's SPL and separate them in an orchestrated fashion. This repo takes
+PHP Exceptions is an attempt to encapsulate a larger variation of exception classes  
+that do not exists within PHP's SPL, and separate them in an orchestrated fashion. This repo takes
 inspiration from [`crazycodr/standard-exceptions`](https://github.com/crazycodr/standard-exceptions). 
 Framework versions will be available shortly after the official v.1.0 release.
 
@@ -14,9 +14,35 @@ application. A sensible exception handling strategy makes it clear what exceptio
 abstraction you carefully applied to your object-oriented design. Last but not least, it should make 
 debugging a breeze._"
 
-Proper Exception handling is a must in PHP applications, and application development in general. 
+Proper Exception handling is a **must** in PHP applications, and application development in general. 
 This library hopes to encourage developers to properly handle exceptions, by giving them a variety of
-new, more tailored exception classes to work with.
+new, more tailored exception classes to work with. This package adds a new variety and flavor when
+building applications. For example, there are now exceptions for:
+
+The File System
+```php
+throw new \Exceptions\FileSystem\FileNotFoundException();
+```
+
+Arrays, objects & JSON
+```php
+throw new \Exceptions\Collection\ArrayNotExistsException();
+```
+
+Arithmetic
+```php
+throw new \Exceptions\Collection\DivideByNegativeNumberException();
+```
+
+Revised PHP SPL's
+```php
+throw new \Exceptions\RuntimeException();
+```
+
+And quite a few more with new ones being implemented all of the time. All tested with PHPUnit >=8 and docs are
+included for the API and PHPUnit tests. And take note that these may be treated just like Exceptions since they
+either `extend` PHP exceptions, or implement the `Throwable` interface.
+
 
 ## Table of contents
  - [Synopsis](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#synopsis)
