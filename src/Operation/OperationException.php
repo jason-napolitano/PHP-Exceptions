@@ -1,10 +1,10 @@
 <?php namespace Exceptions\Operation {
 
     /**
-     * DivideByNegativeNumberError class
+     * OperationException class
      *
-     * This exception is thrown to indicate that an attempt
-     * is made to divide a number by a negative number
+     * A base class for more generic operation/arithmetic related exceptions
+     * to extend
      *
      * @package Exceptions\Operation
      *
@@ -13,13 +13,13 @@
      * @since   0.0.1
      * @license MIT <https://opensource.org/licenses/MIT>
      */
-    class DivideByNegativeNumberError extends OperationException
+    class OperationException extends \ArithmeticError
     {
         /**
          * The exception message
          *
          * @var string $message The exception message
          */
-        protected $message = 'Cannot divide by a negative number';
+        protected $message = 'An error in this arithmetic operation was encountered';
     }
 }
