@@ -41,7 +41,7 @@ throw new \Exceptions\RuntimeException();
 
 And quite a few more with new ones being implemented all of the time. All tested with PHPUnit >=8 and docs are
 included for the API and PHPUnit tests. And take note that these may be treated just like Exceptions since they
-either `extend` PHP exceptions, or implement the `Throwable` interface.
+either `extend` PHP exceptions.
 
 
 ## Table of contents
