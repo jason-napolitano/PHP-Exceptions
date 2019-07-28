@@ -1,5 +1,11 @@
 # PHP Exceptions
- 
+
+[![Latest Stable Version](https://poser.pugx.org/jason-napolitano/php-exceptions/version)](https://packagist.org/packages/jason-napolitano/php-exceptions)
+[![Total Downloads](https://poser.pugx.org/jason-napolitano/php-exceptions/downloads)](https://packagist.org/packages/jason-napolitano/php-exceptions)
+[![License](https://poser.pugx.org/jason-napolitano/php-exceptions/license)](https://packagist.org/packages/jason-napolitano/php-exceptions)
+[![composer.lock available](https://poser.pugx.org/jason-napolitano/php-exceptions/composerlock)](https://packagist.org/packages/jason-napolitano/php-exceptions)
+[![Latest Unstable Version](https://poser.pugx.org/jason-napolitano/php-exceptions/v/unstable)](https://packagist.org/packages/jason-napolitano/php-exceptions)
+
 ## Synopsis
 PHP Exceptions is an attempt to encapsulate a larger variation of exception classes that do not exist 
 within PHP's SPL, and separate them in an orchestrated fashion. This repo takes inspiration from 
