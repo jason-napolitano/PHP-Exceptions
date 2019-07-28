@@ -48,7 +48,7 @@ class FileSystemTest extends TestCase
         // Let's get the exception to throw
         $file = __DIR__ . 'directory';
 
-        if ( ! file_exists($file)) {
+        if ( ! is_file($file)) {
             throw new \Exceptions\FileSystem\NotAFileException();
         }
     }
@@ -68,7 +68,7 @@ class FileSystemTest extends TestCase
         // Let's get the exception to throw
         $file = __DIR__ . 'directory/file.txt';
 
-        if ( ! file_exists($file)) {
+        if ( ! is_dir($file)) {
             throw new \Exceptions\FileSystem\NotADirectoryException();
         }
     }
