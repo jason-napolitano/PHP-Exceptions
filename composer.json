@@ -5,7 +5,7 @@
   "homepage": "https://github.com/jason-napolitano/php-exceptions",
   "license": "MIT",
   "require": {
-    "php": ">=7.2",
+    "php": ">=7.3",
     "ext-json": "*"
   },
   "require-dev": {
