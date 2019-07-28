@@ -28,12 +28,13 @@ class FileSystemTest extends TestCase
         // Let's get the exception to throw
         $file = __DIR__ . 'directory/image_0.png';
 
-        if ( ! file_exists($file)) {
+        if ( ! file_exists($file) ) {
             throw new \Exceptions\FileSystem\FileNotFoundException();
         }
     }
 
     //-------------------------------------------------------------------------
+
     /**
      * Here, we are expecting the \Exceptions\FileSystem\NotAFileException
      * to be thrown
@@ -48,12 +49,13 @@ class FileSystemTest extends TestCase
         // Let's get the exception to throw
         $file = __DIR__ . 'directory';
 
-        if ( ! is_file($file)) {
+        if ( ! is_file($file) ) {
             throw new \Exceptions\FileSystem\NotAFileException();
         }
     }
 
     //-------------------------------------------------------------------------
+
     /**
      * Here, we are expecting the \Exceptions\FileSystem\NotADirectoryException
      * to be thrown
@@ -68,7 +70,7 @@ class FileSystemTest extends TestCase
         // Let's get the exception to throw
         $file = __DIR__ . 'directory/file.txt';
 
-        if ( ! is_dir($file)) {
+        if ( ! is_dir($file) ) {
             throw new \Exceptions\FileSystem\NotADirectoryException();
         }
     }
@@ -89,7 +91,7 @@ class FileSystemTest extends TestCase
         // Let's get the exception to throw
         $dir = __DIR__ . '/directory';
 
-        if (  file_exists($dir)) {
+        if ( file_exists($dir) ) {
             throw new \Exceptions\FileSystem\DirectoryAlreadyExistsException();
         }
 
@@ -111,7 +113,7 @@ class FileSystemTest extends TestCase
         // Let's get the exception to throw
         $dir = __DIR__ . '/non-existent/directory';
 
-        if ( ! file_exists($dir)) {
+        if ( ! file_exists($dir) ) {
             throw new \Exceptions\FileSystem\DirectoryNotFoundException();
         }
     }

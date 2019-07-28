@@ -16,7 +16,7 @@ class ObjectCollectionTest extends TestCase
         // Let's get the exception to throw
         $obj = new StdClass();
 
-        if (isset($obj)) {
+        if ( isset($obj) ) {
             throw new \Exceptions\Collection\ObjectAlreadyExistsException();
         } else {
             $obj = new StdClass();
@@ -37,7 +37,7 @@ class ObjectCollectionTest extends TestCase
         // Let's get the exception to throw
         $obj = null;
 
-        if ( ! is_object($obj)) {
+        if ( ! is_object($obj) ) {
             throw new \Exceptions\Collection\ObjectNotExistsException();
         } else {
             $obj = new StdClass();

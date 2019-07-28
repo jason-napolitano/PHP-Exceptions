@@ -26,7 +26,7 @@ class IntlTest extends TestCase
         $this->expectException(\Exceptions\Intl\IntlException::class);
 
         // Simple test
-        if (2 > 1) {
+        if ( 2 > 1 ) {
             throw new \Exceptions\Intl\IntlException();
         }
 

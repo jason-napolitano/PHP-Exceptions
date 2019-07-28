@@ -29,7 +29,7 @@ class OperationTest extends TestCase
         // Let's get the exception to throw
         function divide_ten_by($dividend)
         {
-            if ($dividend < 0) {
+            if ( $dividend < 0 ) {
                 throw new \Exceptions\Operation\DivideByNegativeNumberError();
             }
             return $dividend / 10;

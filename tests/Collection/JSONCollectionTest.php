@@ -25,7 +25,7 @@ class JSONCollectionTest extends TestCase
         // Let's get the exception to throw
         $var = '{ "name": "My Name", "age": "25, }';
 
-        if ( ! json_decode($var)) {
+        if ( ! json_decode($var) ) {
             // Throw the exception
             throw new \Exceptions\Collection\InvalidJSONException();
         }

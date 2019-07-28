@@ -26,7 +26,7 @@ class HTTPTest extends TestCase
         $this->expectException(\Exceptions\HTTP\HTTPException::class);
 
         // Simple test
-        if (2 > 1) {
+        if ( 2 > 1 ) {
             throw new \Exceptions\HTTP\HTTPException();
         }
 
