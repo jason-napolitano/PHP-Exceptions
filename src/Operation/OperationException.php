@@ -1,5 +1,7 @@
 <?php namespace Exceptions\Operation {
 
+    use Exceptions\ArithmeticError;
+
     /**
      * OperationException class
      *
@@ -13,7 +15,7 @@
      * @since   0.0.1
      * @license MIT <https://opensource.org/licenses/MIT>
      */
-    class OperationException extends \ArithmeticError
+    class OperationException extends ArithmeticError
     {
         /**
          * The exception message
