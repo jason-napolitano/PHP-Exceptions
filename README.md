@@ -40,8 +40,8 @@ throw new \Exceptions\RuntimeException();
 ```
 
 And quite a few more with new ones being implemented all of the time. All tested with PHPUnit >=8 and docs are
-included for the API and PHPUnit tests. And take note that these may be treated just like Exceptions since they
-`extend` standard PHP exceptions.
+included for the API and PHPUnit tests. And take note that these may be treated just like any standard PHP exceptions 
+since they in fact `extend` these same standard PHP exceptions.
 
 
 ## Table of contents
