@@ -1,9 +1,12 @@
 <?php namespace Exceptions\Collection {
 
-    use Exceptions\ExceptionInterface;
-
-    class InvalidJSONException extends \JsonException implements ExceptionInterface
+    class InvalidJSONException extends \Exceptions\JsonException
     {
-
+        /**
+         * The exception message
+         *
+         * @var string $message The exception message
+         */
+        protected $message = 'A collection error was encountered';
     }
 } 

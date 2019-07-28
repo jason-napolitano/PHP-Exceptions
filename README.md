@@ -64,7 +64,8 @@ included for the API and PHPUnit tests. And take note that these may be treated 
    - [Get Composer](https://getcomposer.org/)
    
  ## Requirements
-  - PHP >= 7.2
+  - PHP >= 7.3 and `ext-json`__
+    - (Due to the use of `\JsonException`)
   - Composer
  
  ## Installation
