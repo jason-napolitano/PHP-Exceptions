@@ -84,7 +84,7 @@ try {
 		'city' => null
 	];
 	if ( array_key_exists('gender', $person) ) {
-	    return $persion['gender'];
+	    return $person['gender'];
 	    
 	} else {
 		throw new \Exceptions\Collection\ArrayKeyNotExistsException();
