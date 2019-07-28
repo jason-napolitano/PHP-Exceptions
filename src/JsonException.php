@@ -3,7 +3,7 @@
     /**
      * JsonException class
      *
-     *Thrown if JSON_THROW_ON_ERROR option is set for json_encode() or json_decode() code
+     * Thrown if JSON_THROW_ON_ERROR option is set for json_encode() or json_decode() code
      * contains the error type, for possible values <@see \json_last_error()>.
      *
      * @package Exceptions
