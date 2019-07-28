@@ -1,4 +1,4 @@
-# Practical Exceptions
+# PHP Exceptions
  
 ## Synopsis
 Practical Exceptions is an attempt to contain all different kinds of generic exceptions 
