@@ -115,9 +115,9 @@ Hopefully I can quickly dish these out and a release for v1.0.0:
 
   - Finish Unit Testing
     - [x] Finish current `ExceptionTest` tests
-    - [x] Finish current `Collection\\` tests
-    - [x] Finish current `Operation\\` tests
-    - [ ] Finish current `FileSystem\\` tests
+    - [x] Finish current `\Exceptions\Collection` tests
+    - [x] Finish current `\Exceptions\Operation` tests
+    - [x] Finish current `\Exceptions\FileSystem` tests
     
   - Finish the following exceptions
     - [ ] `\Exceptions\HTTP`

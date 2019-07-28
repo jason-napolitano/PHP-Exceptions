@@ -34,6 +34,46 @@ class FileSystemTest extends TestCase
     }
 
     //-------------------------------------------------------------------------
+    /**
+     * Here, we are expecting the \Exceptions\FileSystem\NotAFileException
+     * to be thrown
+     *
+     * @return void|mixed
+     */
+    public function testExpectNotAFileException()
+    {
+        // We are expecting the Exception to be thrown ...
+        $this->expectException(\Exceptions\FileSystem\NotAFileException::class);
+
+        // Let's get the exception to throw
+        $file = __DIR__ . 'directory';
+
+        if ( ! file_exists($file)) {
+            throw new \Exceptions\FileSystem\NotAFileException();
+        }
+    }
+
+    //-------------------------------------------------------------------------
+    /**
+     * Here, we are expecting the \Exceptions\FileSystem\NotADirectoryException
+     * to be thrown
+     *
+     * @return void|mixed
+     */
+    public function testExpectNotADirectoryException()
+    {
+        // We are expecting the Exception to be thrown ...
+        $this->expectException(\Exceptions\FileSystem\NotADirectoryException::class);
+
+        // Let's get the exception to throw
+        $file = __DIR__ . 'directory/file.txt';
+
+        if ( ! file_exists($file)) {
+            throw new \Exceptions\FileSystem\NotADirectoryException();
+        }
+    }
+
+    //-------------------------------------------------------------------------
 
     /**
      * Here, we are expecting the \Exceptions\FileSystem\DirectoryAlreadyExistsException
@@ -54,8 +94,6 @@ class FileSystemTest extends TestCase
         }
 
     }
-
-    //-------------------------------------------------------------------------
 
     //-------------------------------------------------------------------------
 
