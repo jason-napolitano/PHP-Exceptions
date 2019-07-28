@@ -1,10 +1,10 @@
 # PHP Exceptions
  
 ## Synopsis
-PHP Exceptions is an attempt to encapsulate a larger variation of exception classes  
-that do not exists within PHP's SPL, and separate them in an orchestrated fashion. This repo takes
-inspiration from [`crazycodr/standard-exceptions`](https://github.com/crazycodr/standard-exceptions). 
-Framework versions will be available shortly after the official v.1.0 release.
+PHP Exceptions is an attempt to encapsulate a larger variation of exception classes that do not exists 
+within PHP's SPL, and separate them in an orchestrated fashion. This repo takes inspiration from 
+[`crazycodr/standard-exceptions`](https://github.com/crazycodr/standard-exceptions). Framework versions 
+will be available shortly after the official v.1.0 release.
 
 As said by [Arnout Boks](https://www.moxio.com/blog/34/best-practices-for-php-exception-handling):
 
@@ -15,8 +15,8 @@ abstraction you carefully applied to your object-oriented design. Last but not l
 debugging a breeze._"
 
 Proper Exception handling is a **must** in PHP applications, and application development in general. 
-This library hopes to encourage developers to properly handle exceptions, by giving them a variety of
-new, more tailored exception classes to work with. This package adds a new variety and flavor when
+This library hopes to encourage developers to properly handle exceptions, by giving them new and more 
+tailored exception classes to work with. This package adds a new variety and flavor when
 building applications. For example, there are now exceptions for:
 
 The File System
@@ -41,7 +41,7 @@ throw new \Exceptions\RuntimeException();
 
 And quite a few more with new ones being implemented all of the time. All tested with PHPUnit >=8 and docs are
 included for the API and PHPUnit tests. And take note that these may be treated just like Exceptions since they
-either `extend` PHP exceptions.
+`extend` standard PHP exceptions.
 
 
 ## Table of contents
@@ -68,8 +68,6 @@ either `extend` PHP exceptions.
   - Composer
  
  ## Installation
- By requiring the file via CLI/Terminal
- 
  ```php
  composer require jason-napolitano/php-exceptions
  ```
@@ -85,7 +83,10 @@ try {
 		'age'  => 21,
 		'city' => null
 	];
-	if (!array_key_exists('gender', $person)) {
+	if ( array_key_exists('gender', $person) ) {
+	    return $persion['gender'];
+	    
+	} else {
 		throw new \Exceptions\Collection\ArrayKeyNotExistsException();
 	}
 } catch (Exception $e) {
@@ -94,7 +95,7 @@ try {
 ```
 
 ## TODO
-Hopefully I can dish these out and release v 1.0.0:
+Hopefully I can quickly dish these out and a release for v1.0.0:
 
   - Finish Unit Testing
     - [x] Finish current `ExceptionTest` tests
