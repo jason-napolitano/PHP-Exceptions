@@ -24,7 +24,7 @@ The File System
 throw new \Exceptions\FileSystem\FileNotFoundException();
 ```
 ```php
-throw new \Exceptions\FileSystem\DirectoryAlreadyExists();
+throw new \Exceptions\FileSystem\DirectoryAlreadyExistsException();
 ```
 
 Arrays, objects & JSON
