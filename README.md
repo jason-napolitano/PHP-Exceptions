@@ -1,7 +1,7 @@
 # PHP Exceptions
  
 ## Synopsis
-PHP Exceptions is an attempt to encapsulate a larger variation of exception classes that do not exists 
+PHP Exceptions is an attempt to encapsulate a larger variation of exception classes that do not exist 
 within PHP's SPL, and separate them in an orchestrated fashion. This repo takes inspiration from 
 [`crazycodr/standard-exceptions`](https://github.com/crazycodr/standard-exceptions). Framework versions 
 will be available shortly after the official v.1.0 release.
@@ -9,8 +9,8 @@ will be available shortly after the official v.1.0 release.
 As said by [Arnout Boks](https://www.moxio.com/blog/34/best-practices-for-php-exception-handling):
 
 "_Proper exception handling takes quite some effort, but will eventually result in a much more stable 
-application. A sensible exception handling strategy makes it clear what exceptions should be expected 
-(and thus handled!) at a given point in the code. Moreover it will maintain the encapsulation and 
+application. **A sensible exception handling strategy makes it clear what exceptions should be expected 
+(and thus handled!) at a given point in the code.** Moreover it will maintain the encapsulation and 
 abstraction you carefully applied to your object-oriented design. Last but not least, it should make 
 debugging a breeze._"
 
