@@ -23,10 +23,19 @@ The File System
 ```php
 throw new \Exceptions\FileSystem\FileNotFoundException();
 ```
+```php
+throw new \Exceptions\FileSystem\DirectoryAlreadyExists();
+```
 
 Arrays, objects & JSON
 ```php
 throw new \Exceptions\Collection\ArrayNotExistsException();
+```
+```php
+throw new \Exceptions\Collection\ObjectAlreadyExistsException();
+```
+```php
+throw new \Exceptions\Collection\InvalidJSONException();
 ```
 
 Arithmetic
@@ -36,10 +45,16 @@ throw new \Exceptions\Collection\DivideByNegativeNumberException();
 
 Revised PHP SPL's
 ```php
+throw new \Exceptions\JsonException();
+```
+```php
 throw new \Exceptions\RuntimeException();
 ```
+```php
+throw new \Exceptions\DomainException();
+```
 
-And quite a few more with new ones being implemented all of the time. All tested with PHPUnit >=8 and docs are
+And quite a few more with new ones being implemented all of the time. All tested with PHPUnit 8+ and docs are
 included for the API and PHPUnit tests. And take note that these may be treated just like any standard PHP exceptions 
 since they in fact `extend` these same standard PHP exceptions.
 
