@@ -7,7 +7,7 @@
 [![Latest Unstable Version](https://poser.pugx.org/jason-napolitano/php-exceptions/v/unstable)](https://packagist.org/packages/jason-napolitano/php-exceptions)
 
 ## Synopsis
-PHP Exceptions is an attempt to encapsulate a larger variation of exception classes that do not exist 
+`PHP Exceptions` is an attempt to encapsulate a larger variation of exception classes that do not exist 
 within PHP's SPL, and separate them in an orchestrated fashion. This repo takes inspiration from 
 [`crazycodr/standard-exceptions`](https://github.com/crazycodr/standard-exceptions). Framework versions 
 will be available shortly after the official v.1.0 release.
@@ -85,8 +85,8 @@ since they in fact `extend` these same standard PHP exceptions.
    - [Get Composer](https://getcomposer.org/)
    
  ## Requirements
-  - PHP >= 7.3 and `ext-json`
-    - (Due to the use of `\JsonException`)
+  - PHP >= 7.3 and [`ext-json`](https://www.php.net/manual/en/book.json.php)
+    - (Due to the use of [`\JsonException`](https://www.php.net/manual/en/class.jsonexception.php))
   - Composer
  
  ## Installation
@@ -118,25 +118,19 @@ try {
 
 ## TODO
 Hopefully I can quickly dish these out and a release for v1.0.0:
-
-  - Finish Unit Testing
-    - [x] Finish current `ExceptionTest` tests
-    - [x] Finish current `\Exceptions\Collection` tests
-    - [x] Finish current `\Exceptions\Operation` tests
-    - [x] Finish current `\Exceptions\FileSystem` tests
     
-  - Finish the following exceptions
+  - [ ] Finish the following exceptions
     - [ ] `\Exceptions\HTTP`
     - [ ] `\Exceptions\Intl`
     - [ ] Add tests for the above
     
-  - Create new exception namespaces
+  - [ ] Create new exception namespaces
     - [ ] `\Exceptions\Authentication\*`
     - [ ] `\Exceptions\Authorization\*`
     - [ ] `\Exceptions\Encryption\*`
     - [ ] Add tests for the above
     
-  - Create helper files (Traits)
+  - [ ] Create helper files (Traits)
     - [ ] Create `Exceptions\Authentication\HelperTrait`
     - [ ] Create `Exceptions\Authorization\HelperTrait`
     - [ ] Create `Exceptions\FileSystem\HelperTrait`
