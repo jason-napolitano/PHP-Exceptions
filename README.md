@@ -64,6 +64,14 @@ And quite a few more with new ones being implemented all of the time. All tested
 note that these may be treated just like any standard PHP exceptions since they in fact `extend` these same
 standard PHP exceptions. Meaning that an optional message, code, etc may be passed into the `__construct()`.
 
+## Table of contents
+ - [Synopsis](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#synopsis)
+ - [Useful Links](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#useful-links)
+ - [Requirements](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#requirements)
+ - [Installation](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#installation)
+ - [TODO](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#todo)
+ - [License](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#license)
+ 
 ### Class Blueprint
 Take a look at the following class blueprint ([PHP.net](https://www.php.net/manual/en/class.exception.php)):
 
@@ -94,14 +102,6 @@ namespace Exceptions\NamespaceName {
 
 ```
 
-## Table of contents
- - [Synopsis](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#synopsis)
- - [Useful Links](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#useful-links)
- - [Requirements](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#requirements)
- - [Installation](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#installation)
- - [TODO](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#todo)
- - [License](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#license)
- 
 ## Useful Links
  - [Package Tests](https://github.com/jason-napolitano/PHP-Exceptions/tree/master/tests)
  - PHP Links:
@@ -141,6 +141,26 @@ try {
 	}
 } catch (Exception $e) {
 	echo 'Caught Exception: ',  $e->getMessage(), "\n";
+}
+```
+
+### OOP Usage:
+```php
+class ClassName
+{
+    use \Exceptions\Helpers\ExceptionHelpers;
+
+    public function methodName()
+    {
+        // Using a namespace
+        self::throw_new('FileNotFoundException', 'FileSystem');
+
+        // Using default namespace
+        self::throw_new('RangeException');
+
+        // Using the default \Exceptions\RuntimeException
+        self::throw_new();
+    }
 }
 ```
 
