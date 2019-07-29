@@ -114,7 +114,7 @@ namespace Exceptions\NamespaceName {
    
  ## Requirements
   - PHP >= 7.3 and [`ext-json`](https://www.php.net/manual/en/book.json.php)
-    - (Due to the use of [`\JsonException`](https://www.php.net/manual/en/class.jsonexception.php))
+    - Due to the use of [`\JsonException`](https://www.php.net/manual/en/class.jsonexception.php)
   - Composer
  
  ## Installation
@@ -145,7 +145,7 @@ try {
 ```
 
 ### OOP Usage:
- * _Don't forget to `require` your composer `autoload.php` file_
+ * _Don't forget your composer `autoload.php` file_
 ```php
 class ClassName
 {
@@ -166,7 +166,7 @@ class ClassName
 ```
 
 ## TODO
-Hopefully I can quickly dish these out and a release for v1.0.0:
+Hopefully I can quickly dish these out and a release for v1.0.0 [[View Milestone](https://github.com/jason-napolitano/PHP-Exceptions/milestone/1)]:
     
   - [ ] Finish the following exceptions
     - [ ] `\Exceptions\HTTP`
@@ -178,9 +178,6 @@ Hopefully I can quickly dish these out and a release for v1.0.0:
     - [ ] `\Exceptions\Authorization\*`
     - [ ] `\Exceptions\Encryption\*`
     - [ ] Add tests for the above
-    
-  - [x] Create helper trait
-    - [x] `\Exceptions\Helpers\ExceptionsHelpers`
 
  ## License
  ### MIT License
