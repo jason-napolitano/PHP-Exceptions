@@ -2,3 +2,7 @@ language: php
 php:
   - '7.3'
 script: phpunit
+# safelist
+branches:
+  only:
+  - development
