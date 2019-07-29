@@ -145,6 +145,7 @@ try {
 ```
 
 ### OOP Usage:
+ * _Don't forget to `require` your composer `autoload.php` file_
 ```php
 class ClassName
 {
