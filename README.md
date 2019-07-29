@@ -158,16 +158,8 @@ Hopefully I can quickly dish these out and a release for v1.0.0:
     - [ ] `\Exceptions\Encryption\*`
     - [ ] Add tests for the above
     
-  - [ ] Create helper files (Traits)
-    - [ ] Create `Exceptions\Authentication\HelperTrait`
-    - [ ] Create `Exceptions\Authorization\HelperTrait`
-    - [ ] Create `Exceptions\FileSystem\HelperTrait`
-    - [ ] Create `Exceptions\Collection\HelperTrait`
-    - [ ] Create `Exceptions\Encryption\HelperTrait`
-    - [ ] Create `Exceptions\Operation\HelperTrait`
-    - [ ] Create `Exceptions\HTTP\HelperTrait`
-    - [ ] Create `Exceptions\Intl\HelperTrait`
-    - [ ] Create `Exceptions\HelperTrait`
+  - [x] Create helper trait
+    - [x] `\Exceptions\Helpers\ExceptionsHelpers`
 
  ## License
  ### MIT License
