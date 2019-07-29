@@ -74,7 +74,6 @@ since they in fact `extend` these same standard PHP exceptions.
  - [License](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#license)
  
 ## Useful Links
- - [API Documentation](https://github.com/jason-napolitano/PHP-Exceptions/tree/master/docs)
  - [Package Tests](https://github.com/jason-napolitano/PHP-Exceptions/tree/master/tests)
  - PHP Links:
    - [PHP Exceptions](https://www.php.net/manual/en/language.exceptions.php)
