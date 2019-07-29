@@ -60,9 +60,37 @@ throw new \Exceptions\RuntimeException();
 throw new \Exceptions\DomainException();
 ```
 
-And quite a few more with new ones being implemented all of the time. All tested with PHPUnit 8+ and docs are
-included for the API and PHPUnit tests. And take note that these may be treated just like any standard PHP exceptions 
-since they in fact `extend` these same standard PHP exceptions.
+And quite a few more with new ones being implemented all of the time. All tested with PHPUnit 8+. And take 
+note that these may be treated just like any standard PHP exceptions since they in fact `extend` these same
+standard PHP exceptions. Meaning that an optional message, code, etc may be passed into the `__construct()`.
+Take a look at the class blueprint below:
+
+```php
+namespace Exceptions\NamespaceName {
+    
+    class ExampleException extends \RuntimeException
+    {
+        /* Properties */
+        protected string $message;
+        protected int $code;
+        protected string $file;
+        protected int $line;
+
+        /* Methods */
+        public __construct ([ string $message = "" [, int $code = 0 [, Throwable $previous = NULL ]]] )
+        final public getMessage ( void ) : string
+        final public getPrevious ( void ) : Throwable
+        final public getCode ( void ) : mixed
+        final public getFile ( void ) : string
+        final public getLine ( void ) : int
+        final public getTrace ( void ) : array
+        final public getTraceAsString ( void ) : string
+        public __toString ( void ) : string
+        final private __clone ( void ) : void
+    }
+}
+
+```
 
 
 ## Table of contents
