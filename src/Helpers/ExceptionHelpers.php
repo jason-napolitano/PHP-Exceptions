@@ -6,7 +6,7 @@
      * A simple trait that should assist in throwing specific exceptions
      * from within classes
      *
-     * @package Tests
+     * @package Exceptions\Helpers
      *
      * @author  Jason Napolitano <https://github.com/jason-napolitano>
      * @version 0.0.2
