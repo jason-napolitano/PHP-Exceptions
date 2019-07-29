@@ -4,6 +4,7 @@
 [![Total Downloads](https://poser.pugx.org/jason-napolitano/php-exceptions/downloads)](https://packagist.org/packages/jason-napolitano/php-exceptions)
 [![License](https://poser.pugx.org/jason-napolitano/php-exceptions/license)](https://packagist.org/packages/jason-napolitano/php-exceptions)
 [![Build Status](https://travis-ci.com/jason-napolitano/PHP-Exceptions.svg?branch=development)](https://travis-ci.com/jason-napolitano/PHP-Exceptions)
+[![Coverage Status](https://coveralls.io/repos/github/jason-napolitano/PHP-Exceptions/badge.svg?branch=master)](https://coveralls.io/github/jason-napolitano/PHP-Exceptions?branch=development)
 
 ## Synopsis
 `PHP Exceptions` is an attempt to encapsulate a larger variation of exception classes that do not exist 
