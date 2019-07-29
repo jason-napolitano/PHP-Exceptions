@@ -63,7 +63,9 @@ throw new \Exceptions\DomainException();
 And quite a few more with new ones being implemented all of the time. All tested with PHPUnit 8+. And take 
 note that these may be treated just like any standard PHP exceptions since they in fact `extend` these same
 standard PHP exceptions. Meaning that an optional message, code, etc may be passed into the `__construct()`.
-Take a look at the class blueprint below:
+
+### Class Blueprint
+Take a look at the following class blueprint ([PHP.net](https://www.php.net/manual/en/class.exception.php)):
 
 ```php
 namespace Exceptions\NamespaceName {
@@ -91,7 +93,6 @@ namespace Exceptions\NamespaceName {
 }
 
 ```
-
 
 ## Table of contents
  - [Synopsis](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#synopsis)
