@@ -3,8 +3,6 @@
 [![Latest Stable Version](https://poser.pugx.org/jason-napolitano/php-exceptions/version)](https://packagist.org/packages/jason-napolitano/php-exceptions)
 [![Total Downloads](https://poser.pugx.org/jason-napolitano/php-exceptions/downloads)](https://packagist.org/packages/jason-napolitano/php-exceptions)
 [![License](https://poser.pugx.org/jason-napolitano/php-exceptions/license)](https://packagist.org/packages/jason-napolitano/php-exceptions)
-[![composer.lock available](https://poser.pugx.org/jason-napolitano/php-exceptions/composerlock)](https://packagist.org/packages/jason-napolitano/php-exceptions)
-[![Latest Unstable Version](https://poser.pugx.org/jason-napolitano/php-exceptions/v/unstable)](https://packagist.org/packages/jason-napolitano/php-exceptions)
 [![Build Status](https://travis-ci.com/jason-napolitano/PHP-Exceptions.svg?branch=master)](https://travis-ci.com/jason-napolitano/PHP-Exceptions)
 
 ## Synopsis
