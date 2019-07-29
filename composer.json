@@ -4,7 +4,7 @@
   "description": "A small and intuitive collection of classes to assist in better exception handling inside of PHP applications",
   "homepage": "https://github.com/jason-napolitano/php-exceptions",
   "license": "MIT",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "require": {
     "php": ">=7.3",
     "ext-json": "*"
