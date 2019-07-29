@@ -2,4 +2,4 @@ language: php
 php:
   - '7.3'
   - '7.4'
-script: phpunit --bootstrap vendor/autoload.php tests
+script: phpunit
