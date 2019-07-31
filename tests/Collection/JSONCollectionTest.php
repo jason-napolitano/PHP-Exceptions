@@ -19,19 +19,47 @@
     class JSONCollectionTest extends TestCase
     {
         /**
+         *  An invalid JSON string
+         *
+         * @var string $invalid_json An invalid JSON string
+         */
+        private $invalid_json = 'obviously_not_a_json_string';
+
+        //-------------------------------------------------------------------------
+
+        /**
          * @return void
          */
-        public function testExceptInvalidJSONException(): void
+        public function testExpectInvalidJSONException(): void
         {
             // We are expecting the Exception to be thrown ...
             $this->expectException(\Exceptions\Collection\InvalidJSONException::class);
 
-            // Let's get the exception to throw
-            $var = '{ "name": "My Name", "age": "25, }';
+            function is_json($string): bool
+            {
+                json_decode($string);
+                return (json_last_error() === JSON_ERROR_NONE);
+            }
 
-            if ( ! json_decode($var) ) {
+            if ( ! is_json($this->invalid_json) ) {
                 // Throw the exception
                 throw new \Exceptions\Collection\InvalidJSONException();
+            }
+        }
+
+        //-------------------------------------------------------------------------
+        /**
+         * @return void
+         */
+        public function testExpectJSONDecodeException(): void
+        {
+            // We are expecting the Exception to be thrown ...
+            $this->expectException(\Exceptions\Collection\JSONDecodeException::class);
+
+            // Let's get the exception to throw
+            if ( ! json_decode($this->invalid_json) ) {
+                // Throw the exception
+                throw new \Exceptions\Collection\JSONDecodeException();
             }
         }
 
