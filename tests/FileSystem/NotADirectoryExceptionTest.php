@@ -30,7 +30,7 @@
             // Let's get the exception to throw
             $file = __DIR__ . 'directory/file.txt';
 
-            if ( ! is_dir($file) ) {
+            if (! is_dir($file)) {
                 throw new \Exceptions\FileSystem\NotADirectoryException();
             }
         }

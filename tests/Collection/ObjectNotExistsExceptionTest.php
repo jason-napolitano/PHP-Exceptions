@@ -27,7 +27,7 @@
             // Let's get the exception to throw
             $obj = null;
 
-            if ( ! is_object($obj) ) {
+            if (! is_object($obj)) {
                 throw new \Exceptions\Collection\ObjectNotExistsException();
             } else {
                 $obj = new \StdClass();

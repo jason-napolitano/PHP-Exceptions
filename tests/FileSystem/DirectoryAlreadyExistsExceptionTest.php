@@ -30,10 +30,9 @@
             // Let's get the exception to throw
             $dir = __DIR__ . '/directory';
 
-            if ( file_exists($dir) ) {
+            if (file_exists($dir)) {
                 throw new \Exceptions\FileSystem\DirectoryAlreadyExistsException();
             }
-
         }
 
         //-------------------------------------------------------------------------

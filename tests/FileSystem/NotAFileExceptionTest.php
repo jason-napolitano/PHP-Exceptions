@@ -30,7 +30,7 @@
             // Let's get the exception to throw
             $file = __DIR__ . 'directory';
 
-            if ( ! is_file($file) ) {
+            if (! is_file($file)) {
                 throw new \Exceptions\FileSystem\NotAFileException();
             }
         }

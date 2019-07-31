@@ -27,7 +27,7 @@
             // Let's get the exception to throw
             $var = null;
 
-            if ( ! is_array($var) ) {
+            if (! is_array($var)) {
                 // Throw the exception
                 throw new \Exceptions\Collection\ArrayNotExistsException();
             }

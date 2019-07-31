@@ -33,7 +33,7 @@
             // Let's get the exception to throw
             function load_callable(callable $func = null)
             {
-                if ( ! is_callable($func) ) {
+                if (! is_callable($func)) {
                     throw new \Exceptions\BadFunctionCallException();
                 }
             }
@@ -56,7 +56,7 @@
 
             function divide($dividend, $divisor)
             {
-                if ( $divisor === 0 ) {
+                if ($divisor === 0) {
                     throw new \Exceptions\DivisionByZeroError();
                 }
                 return $dividend / $divisor;
@@ -81,7 +81,7 @@
             // Let's get the exception to throw
             function requires_int($x)
             {
-                if ( ! is_int($x) ) {
+                if (! is_int($x)) {
                     throw new \Exceptions\InvalidArgumentException();
                 }
             }
@@ -106,7 +106,7 @@
             $_POST['unset_value'] = null;
             $post = $_POST['unset_value'];
 
-            if ( ! isset($post) ) {
+            if (! isset($post)) {
                 throw new \Exceptions\OutOfBoundsException();
             }
         }
@@ -127,7 +127,7 @@
             // Let's get the exception to throw
             $var = 11;
 
-            if ( $var > 10 ) {
+            if ($var > 10) {
                 throw new \Exceptions\OutOfRangeException();
             }
         }

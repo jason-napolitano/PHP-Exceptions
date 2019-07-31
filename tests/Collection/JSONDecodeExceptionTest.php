@@ -30,7 +30,7 @@
             $this->expectException(\Exceptions\Collection\JSONDecodeException::class);
 
             // Let's get the exception to throw
-            if ( ! json_decode($this->invalid_json) ) {
+            if (! json_decode($this->invalid_json)) {
                 // Throw the exception
                 throw new \Exceptions\Collection\JSONDecodeException();
             }

@@ -5,9 +5,7 @@
     /**
      * AuthenticationTest Test Case
      *
-     * This test case is used to ensure that the exceptions within the
-     * Exceptions\Authentication\* namespace are properly thrown under
-     * the correct set of conditions
+     * Testing \Exceptions\Authentication\AuthenticationException
      *
      * @package Tests\Authentication
      *
@@ -29,20 +27,19 @@
             // We are expecting the Exception to be thrown ...
             $this->expectException(\Exceptions\Authentication\AuthenticationException::class);
 
-            $username  = null;
-            $password  = null;
+            $username = null;
+            $password = null;
 
-            if (  !(string)$username || !(string)$password ) {
+            if (! (string)$username || ! (string)$password) {
                 throw new \Exceptions\Authentication\AuthenticationException();
             } else {
                 $user_data = [
                     'username' => $username,
-                    'password' => $password
+                    'password' => $password,
                 ];
 
                 return $user_data;
             }
-
         }
 
         //-------------------------------------------------------------------------

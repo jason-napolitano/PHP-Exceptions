@@ -27,7 +27,7 @@
             // Let's get the exception to throw
             $file = __DIR__ . 'directory/image_0.png';
 
-            if ( ! file_exists($file) ) {
+            if (! file_exists($file)) {
                 throw new \Exceptions\FileSystem\FileNotFoundException();
             }
         }

@@ -35,7 +35,7 @@
                 return (json_last_error() === JSON_ERROR_NONE);
             }
 
-            if ( ! is_json($this->invalid_json) ) {
+            if (! is_json($this->invalid_json)) {
                 // Throw the exception
                 throw new \Exceptions\Collection\InvalidJSONException();
             }

@@ -5,9 +5,7 @@
     /**
      * IntlTest Test Case
      *
-     * This test case is used to ensure that the exceptions within the
-     * Exceptions\Intl\* namespace are properly thrown under the correct
-     * set of conditions
+     * Testing \Exceptions\Intl\IntlException
      *
      * @package Tests\Intl
      *
@@ -30,10 +28,9 @@
             $this->expectException(\Exceptions\Intl\IntlException::class);
 
             // Simple test
-            if ( 2 > 1 ) {
+            if (2 > 1) {
                 throw new \Exceptions\Intl\IntlException();
             }
-
         }
 
         //-------------------------------------------------------------------------

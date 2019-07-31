@@ -27,7 +27,7 @@
             // Let's get the exception to throw
             $var = ['name' => 'Name'];
 
-            if ( ! array_key_exists('dob', $var) ) {
+            if (! array_key_exists('dob', $var)) {
                 // Throw the exception
                 throw new \Exceptions\Collection\ArrayKeyNotExistsException();
             }

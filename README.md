@@ -66,6 +66,7 @@ standard PHP exceptions. Meaning that an optional message, code, etc may be pass
 
 ## Table of contents
  - [Synopsis](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#synopsis)
+ - [Contributing](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/CONTRIBUTING.md)
  - [Useful Links](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#useful-links)
  - [Requirements](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#requirements)
  - [Installation](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#installation)
