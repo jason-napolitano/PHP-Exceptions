@@ -1,27 +1,21 @@
 <?php use PHPUnit\Framework\TestCase;
 
 /**
- * OperationTest Test Case
+ * DivideByNegativeNumberErrorTest Test Case
  *
- * This test case is used to ensure that the exceptions within the
- * Exceptions\Operation\* namespace are properly thrown under the
- * correct set of conditions
+ * Testing \Exceptions\Operation\DivideByNegativeNumberError
  *
  * @author  Jason Napolitano <https://github.com/jason-napolitano>
  * @version 0.0.3
  * @since   0.0.1
  * @license MIT <https://opensource.org/licenses/MIT>
  */
-class OperationTest extends TestCase
+class DivideByNegativeNumberErrorTest extends TestCase
 {
-
     /**
-     * Here, we are expecting the \Exceptions\Operation\DivideByNegativeNumberError
-     * to be thrown
-     *
-     * @return void|mixed
+     * @return void
      */
-    public function testExpectDivideByNegativeNumberError()
+    public function testExpectDivideByNegativeNumberError(): void
     {
         // We are expecting the Exception to be thrown ...
         $this->expectException(\Exceptions\Operation\DivideByNegativeNumberError::class);
