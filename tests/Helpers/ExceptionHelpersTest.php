@@ -1,4 +1,4 @@
-<?php namespace Tests {
+<?php namespace Tests\Helpers {
 
     use PHPUnit\Framework\TestCase;
 
@@ -9,7 +9,7 @@
      * Exceptions\Helpers namespace are properly thrown under the
      * correct set of conditions
      *
-     * @package Tests
+     * @package Tests\Helpers
      *
      * @author  Jason Napolitano <https://github.com/jason-napolitano>
      * @version 0.0.3
