@@ -1,7 +1,7 @@
 <?php namespace Exceptions\Collection {
 
     /**
-     * InvalidJSONException class
+     * JSONEncodeException class
      *
      * Thrown if the specified JSON could not be encoded
      *
