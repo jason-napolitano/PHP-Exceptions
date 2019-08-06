@@ -1,27 +1,28 @@
-<?php namespace Exceptions\Intl {
+<?php
 
-    use Exceptions\DomainException;
+namespace Exceptions\Intl;
 
+use Exceptions\DomainException;
+
+/**
+ * IntlException class
+ *
+ * A base class for more generic internationalization related exceptions
+ * to extend
+ *
+ * @package Exceptions\Intl
+ *
+ * @author  Jason Napolitano <https://github.com/jason-napolitano>
+ * @version 0.0.3
+ * @since   0.0.1
+ * @license MIT <https://opensource.org/licenses/MIT>
+ */
+class IntlException extends DomainException
+{
     /**
-     * IntlException class
+     * The exception message
      *
-     * A base class for more generic internationalization related exceptions
-     * to extend
-     *
-     * @package Exceptions\Intl
-     *
-     * @author  Jason Napolitano <https://github.com/jason-napolitano>
-     * @version 0.0.3
-     * @since   0.0.1
-     * @license MIT <https://opensource.org/licenses/MIT>
+     * @var string $message The exception message
      */
-    class IntlException extends DomainException
-    {
-        /**
-         * The exception message
-         *
-         * @var string $message The exception message
-         */
-        protected $message = 'An internationalization error was encountered';
-    }
+    protected $message = 'An internationalization error was encountered';
 }

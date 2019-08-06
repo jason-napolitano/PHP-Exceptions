@@ -1,25 +1,26 @@
-<?php namespace Exceptions\FileSystem {
+<?php
 
+namespace Exceptions\FileSystem;
+
+/**
+ * FileNotDeletedException class
+ *
+ * The FileNotDeletedException indicates that a file
+ * was not deleted
+ *
+ * @package Exceptions\FileSystem
+ *
+ * @author  Jason Napolitano <https://github.com/jason-napolitano>
+ * @version 0.0.3
+ * @since   0.0.1
+ * @license MIT <https://opensource.org/licenses/MIT>
+ */
+class FileNotDeletedException extends FileSystemException
+{
     /**
-     * FileNotDeletedException class
+     * The exception message
      *
-     * The FileNotDeletedException indicates that a file
-     * was not deleted
-     *
-     * @package Exceptions\FileSystem
-     *
-     * @author  Jason Napolitano <https://github.com/jason-napolitano>
-     * @version 0.0.3
-     * @since   0.0.1
-     * @license MIT <https://opensource.org/licenses/MIT>
+     * @var string $message The exception message
      */
-    class FileNotDeletedException extends FileSystemException
-    {
-        /**
-         * The exception message
-         *
-         * @var string $message The exception message
-         */
-        protected $message = 'Specified file was not deleted';
-    }
+    protected $message = 'Specified file was not deleted';
 }

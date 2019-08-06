@@ -1,25 +1,26 @@
-<?php namespace Exceptions\FileSystem {
+<?php
 
+namespace Exceptions\FileSystem;
+
+/**
+ * NotAFileException class
+ *
+ * The NotAFileException indicates that a path
+ * is not file
+ *
+ * @package Exceptions\FileSystem
+ *
+ * @author  Jason Napolitano <https://github.com/jason-napolitano>
+ * @version 0.0.3
+ * @since   0.0.1
+ * @license MIT <https://opensource.org/licenses/MIT>
+ */
+class NotAFileException extends FileSystemException
+{
     /**
-     * NotAFileException class
+     * The exception message
      *
-     * The NotAFileException indicates that a path
-     * is not file
-     *
-     * @package Exceptions\FileSystem
-     *
-     * @author  Jason Napolitano <https://github.com/jason-napolitano>
-     * @version 0.0.3
-     * @since   0.0.1
-     * @license MIT <https://opensource.org/licenses/MIT>
+     * @var string $message The exception message
      */
-    class NotAFileException extends FileSystemException
-    {
-        /**
-         * The exception message
-         *
-         * @var string $message The exception message
-         */
-        protected $message = 'Specified path is not a file';
-    }
+    protected $message = 'Specified path is not a file';
 }

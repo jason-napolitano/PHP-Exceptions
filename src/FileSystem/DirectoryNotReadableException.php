@@ -1,25 +1,26 @@
-<?php namespace Exceptions\FileSystem {
+<?php
 
+namespace Exceptions\FileSystem;
+
+/**
+ * DirectoryNotReadableException class
+ *
+ * The DirectoryNotReadableException indicates that a directory
+ * not readable
+ *
+ * @package Exceptions\FileSystem
+ *
+ * @author  Jason Napolitano <https://github.com/jason-napolitano>
+ * @version 0.0.3
+ * @since   0.0.1
+ * @license MIT <https://opensource.org/licenses/MIT>
+ */
+class DirectoryNotReadableException extends FileSystemException
+{
     /**
-     * DirectoryNotReadableException class
+     * The exception message
      *
-     * The DirectoryNotReadableException indicates that a directory
-     * not readable
-     *
-     * @package Exceptions\FileSystem
-     *
-     * @author  Jason Napolitano <https://github.com/jason-napolitano>
-     * @version 0.0.3
-     * @since   0.0.1
-     * @license MIT <https://opensource.org/licenses/MIT>
+     * @var string $message The exception message
      */
-    class DirectoryNotReadableException extends FileSystemException
-    {
-        /**
-         * The exception message
-         *
-         * @var string $message The exception message
-         */
-        protected $message = 'Specified directory is not readable';
-    }
+    protected $message = 'Specified directory is not readable';
 }
