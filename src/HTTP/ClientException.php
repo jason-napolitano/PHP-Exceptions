@@ -1,4 +1,6 @@
-<?php namespace Exceptions\HTTP {
+<?php
+
+namespace Exceptions\HTTP;
 
 use Exceptions\DomainException;
 
@@ -42,5 +44,4 @@ class ClientException extends DomainException
         $this->statusCode = $statusCode;
         $this->message = $message;
     }
-}
 }

@@ -1,39 +1,39 @@
-<?php namespace Tests\Intl {
+<?php
 
-    use PHPUnit\Framework\TestCase;
+namespace Tests\Intl;
 
+use PHPUnit\Framework\TestCase;
+
+/**
+ * IntlTest Test Case
+ *
+ * Testing \Exceptions\Intl\IntlException
+ *
+ * @package Tests\Intl
+ *
+ * @author  Jason Napolitano <https://github.com/jason-napolitano>
+ * @version 0.0.3
+ * @since   0.0.1
+ * @license MIT <https://opensource.org/licenses/MIT>
+ */
+class IntlTest extends TestCase
+{
     /**
-     * IntlTest Test Case
+     * Here, we are expecting the \Exceptions\Intl\IntlException
+     * to be thrown
      *
-     * Testing \Exceptions\Intl\IntlException
-     *
-     * @package Tests\Intl
-     *
-     * @author  Jason Napolitano <https://github.com/jason-napolitano>
-     * @version 0.0.3
-     * @since   0.0.1
-     * @license MIT <https://opensource.org/licenses/MIT>
+     * @return void|mixed
      */
-    class IntlTest extends TestCase
+    public function testExpectIntlException()
     {
-        /**
-         * Here, we are expecting the \Exceptions\Intl\IntlException
-         * to be thrown
-         *
-         * @return void|mixed
-         */
-        public function testExpectIntlException()
-        {
-            // We are expecting the Exception to be thrown ...
-            $this->expectException(\Exceptions\Intl\IntlException::class);
+        // We are expecting the Exception to be thrown ...
+        $this->expectException(\Exceptions\Intl\IntlException::class);
 
-            // Simple test
-            if (2 > 1) {
-                throw new \Exceptions\Intl\IntlException();
-            }
+        // Simple test
+        if (2 > 1) {
+            throw new \Exceptions\Intl\IntlException();
         }
-
-        //-------------------------------------------------------------------------
     }
 
+    //-------------------------------------------------------------------------
 }

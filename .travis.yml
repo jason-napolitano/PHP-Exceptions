@@ -2,5 +2,6 @@ language: php
 php:
   - '7.3'
 before_install:
-- composer install
+  - composer install
+  - vendor/bin/phpcs --standard=psr2 src tests/
 script: phpunit

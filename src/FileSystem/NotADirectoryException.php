@@ -1,25 +1,26 @@
-<?php namespace Exceptions\FileSystem {
+<?php
 
+namespace Exceptions\FileSystem;
+
+/**
+ * NotADirectoryException class
+ *
+ * The NotADirectoryException indicates that a path
+ * is not directory
+ *
+ * @package Exceptions\FileSystem
+ *
+ * @author  Jason Napolitano <https://github.com/jason-napolitano>
+ * @version 0.0.3
+ * @since   0.0.1
+ * @license MIT <https://opensource.org/licenses/MIT>
+ */
+class NotADirectoryException extends FileSystemException
+{
     /**
-     * NotADirectoryException class
+     * The exception message
      *
-     * The NotADirectoryException indicates that a path
-     * is not directory
-     *
-     * @package Exceptions\FileSystem
-     *
-     * @author  Jason Napolitano <https://github.com/jason-napolitano>
-     * @version 0.0.3
-     * @since   0.0.1
-     * @license MIT <https://opensource.org/licenses/MIT>
+     * @var string $message The exception message
      */
-    class NotADirectoryException extends FileSystemException
-    {
-        /**
-         * The exception message
-         *
-         * @var string $message The exception message
-         */
-        protected $message = 'Specified path is not a directory';
-    }
+    protected $message = 'Specified path is not a directory';
 }

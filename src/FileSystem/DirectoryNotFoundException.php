@@ -1,25 +1,26 @@
-<?php namespace Exceptions\FileSystem {
+<?php
 
+namespace Exceptions\FileSystem;
+
+/**
+ * DirectoryNotFoundException class
+ *
+ * The DirectoryNotFoundException indicates that a directory
+ * cannot be found
+ *
+ * @package Exceptions\FileSystem
+ *
+ * @author  Jason Napolitano <https://github.com/jason-napolitano>
+ * @version 0.0.3
+ * @since   0.0.1
+ * @license MIT <https://opensource.org/licenses/MIT>
+ */
+class DirectoryNotFoundException extends FileSystemException
+{
     /**
-     * DirectoryNotFoundException class
+     * The exception message
      *
-     * The DirectoryNotFoundException indicates that a directory
-     * cannot be found
-     *
-     * @package Exceptions\FileSystem
-     *
-     * @author  Jason Napolitano <https://github.com/jason-napolitano>
-     * @version 0.0.3
-     * @since   0.0.1
-     * @license MIT <https://opensource.org/licenses/MIT>
+     * @var string $message The exception message
      */
-    class DirectoryNotFoundException extends FileSystemException
-    {
-        /**
-         * The exception message
-         *
-         * @var string $message The exception message
-         */
-        protected $message = 'Specified directory cannot be found';
-    }
+    protected $message = 'Specified directory cannot be found';
 }

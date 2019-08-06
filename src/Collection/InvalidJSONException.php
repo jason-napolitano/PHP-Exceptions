@@ -1,26 +1,27 @@
-<?php namespace Exceptions\Collection {
+<?php
 
-    use Exceptions\JsonException;
+namespace Exceptions\Collection;
 
+use Exceptions\JsonException;
+
+/**
+ * InvalidJSONException class
+ *
+ * Thrown if provided JSON is not valid JSON
+ *
+ * @package Exceptions\Collection
+ *
+ * @author  Jason Napolitano <https://github.com/jason-napolitano>
+ * @version 0.0.3
+ * @since   0.0.1
+ * @license MIT <https://opensource.org/licenses/MIT>
+ */
+class InvalidJSONException extends JsonException
+{
     /**
-     * InvalidJSONException class
+     * The exception message
      *
-     * Thrown if provided JSON is not valid JSON
-     *
-     * @package Exceptions\Collection
-     *
-     * @author  Jason Napolitano <https://github.com/jason-napolitano>
-     * @version 0.0.3
-     * @since   0.0.1
-     * @license MIT <https://opensource.org/licenses/MIT>
+     * @var string $message The exception message
      */
-    class InvalidJSONException extends JsonException
-    {
-        /**
-         * The exception message
-         *
-         * @var string $message The exception message
-         */
-        protected $message = 'The specified JSON is invalid';
-    }
-} 
+    protected $message = 'The specified JSON is invalid';
+}

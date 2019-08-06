@@ -1,4 +1,6 @@
-<?php namespace Tests\HTTP {
+<?php
+
+namespace Tests\HTTP;
 
 use PHPUnit\Framework\TestCase;
 
@@ -34,6 +36,4 @@ class ClientExceptionTest extends TestCase
     }
 
     //-------------------------------------------------------------------------
-}
-
 }
