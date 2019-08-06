@@ -77,28 +77,27 @@ standard PHP exceptions. Meaning that an optional message, code, etc may be pass
 Take a look at the following class blueprint ([PHP.net](https://www.php.net/manual/en/class.exception.php)):
 
 ```php
-namespace Exceptions\NamespaceName {
+namespace Exceptions\NamespaceName;
     
-    class ExampleException extends \RuntimeException
-    {
-        /* Properties */
-        protected string $message;
-        protected int $code;
-        protected string $file;
-        protected int $line;
+class ExampleException extends \RuntimeException
+{
+    /* Properties */
+    protected string $message;
+    protected int $code;
+    protected string $file;
+    protected int $line;
 
-        /* Methods */
-        public __construct ([ string $message = "" [, int $code = 0 [, Throwable $previous = NULL ]]] )
-        final public getMessage ( void ) : string
-        final public getPrevious ( void ) : Throwable
-        final public getCode ( void ) : mixed
-        final public getFile ( void ) : string
-        final public getLine ( void ) : int
-        final public getTrace ( void ) : array
-        final public getTraceAsString ( void ) : string
-        public __toString ( void ) : string
-        final private __clone ( void ) : void
-    }
+    /* Methods */
+    public __construct ([ string $message = "" [, int $code = 0 [, Throwable $previous = NULL ]]] )
+    final public getMessage ( void ) : string
+    final public getPrevious ( void ) : Throwable
+    final public getCode ( void ) : mixed
+    final public getFile ( void ) : string
+    final public getLine ( void ) : int
+    final public getTrace ( void ) : array
+    final public getTraceAsString ( void ) : string
+    public __toString ( void ) : string
+    final private __clone ( void ) : void
 }
 
 ```
