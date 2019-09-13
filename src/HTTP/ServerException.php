@@ -5,9 +5,9 @@ namespace Exceptions\HTTP;
 use Exceptions\DomainException;
 
 /**
- * ClientException class
+ * ServerException class
  *
- * A base class for more generic HTTP client 4xx error exceptions
+ * A base class for more generic HTTP client 5xx error exceptions
  * to extend
  *
  * @package Exceptions\HTTP
@@ -17,7 +17,7 @@ use Exceptions\DomainException;
  * @since   0.0.1
  * @license MIT <https://opensource.org/licenses/MIT>
  */
-class ClientException extends DomainException
+class ServerException extends DomainException
 {
     /**
      * The exception message
@@ -29,9 +29,9 @@ class ClientException extends DomainException
     /**
      * The HTTP status code
      *
-     * @var int $statusCode The HTTP status code
+     * @var int $statusCode The HTTP 4xx status code
      */
-    protected $statusCode = 400;
+    protected $statusCode = 500;
 
     /**
      * Constructor for ClientException
