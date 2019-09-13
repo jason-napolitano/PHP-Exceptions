@@ -8,9 +8,7 @@
 
 ## Synopsis
 `PHP Exceptions` is an attempt to encapsulate a larger variation of exception classes that do not exist 
-within PHP's SPL, and separate them in an orchestrated fashion. This repo takes inspiration from 
-[`crazycodr/standard-exceptions`](https://github.com/crazycodr/standard-exceptions). Framework versions 
-will be available shortly after the official v.1.0 release.
+within PHP's SPL, and separate them in an orchestrated fashion. 
 
 As said by [Arnout Boks](https://www.moxio.com/blog/34/best-practices-for-php-exception-handling):
 
@@ -60,9 +58,10 @@ throw new \Exceptions\RuntimeException();
 throw new \Exceptions\DomainException();
 ```
 
-And quite a few more with new ones being implemented all of the time. All tested with PHPUnit 8+. And take 
+And quite a few more with new ones being implemented all the time. All tested with PHPUnit 8+. And take 
 note that these may be treated just like any standard PHP exceptions since they in fact `extend` these same
 standard PHP exceptions. Meaning that an optional message, code, etc may be passed into the `__construct()`.
+Framework versions will be available shortly after the official v.1.0 release.
 
 ## Table of contents
  - [Synopsis](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#synopsis)
@@ -154,13 +153,13 @@ class ClassName
     public function methodName()
     {
         // Using a namespace
-        self::throw_new('FileNotFoundException', 'FileSystem');
+        self::throwNew('FileNotFoundException', 'FileSystem');
 
         // Using default namespace
-        self::throw_new('RangeException');
+        self::throwNew('RangeException');
 
         // Using the default \Exceptions\RuntimeException
-        self::throw_new();
+        self::throwNew();
     }
 }
 ```
