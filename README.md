@@ -1,4 +1,5 @@
 # PHP Exceptions
+_THIS REPO IS NOW ARCHIVED SINCE I AM MOVING FROM DEVELOPING IN PHP AND INTO THE JAVASCRIPT WORLD. THANK YOU TO THOSE WHO HELPED WITH THIS FOR ITS SHORT LIFETIME_
 
 [![Latest Stable Version](https://poser.pugx.org/jason-napolitano/php-exceptions/version)](https://packagist.org/packages/jason-napolitano/php-exceptions)
 [![Total Downloads](https://poser.pugx.org/jason-napolitano/php-exceptions/downloads)](https://packagist.org/packages/jason-napolitano/php-exceptions)
