@@ -112,8 +112,8 @@ class ExampleException extends \RuntimeException
    - [Get Composer](https://getcomposer.org/)
    
  ## Requirements
-  - PHP >= 7.3 and [`ext-json`](https://www.php.net/manual/en/book.json.php)
-    - Due to the use of [`\JsonException`](https://www.php.net/manual/en/class.jsonexception.php)
+  - PHP >= 7.4 and [`ext-json`](https://www.php.net/manual/en/book.json.php)
+    - Due to the use of [`\JsonException`](https://www.php.net/manual/en/class.jsonexception.php) and the use of typed properties [[link]](https://www.php.net/manual/en/migration74.new-features.php).
   - Composer
  
  ## Installation
@@ -169,13 +169,6 @@ Hopefully I can quickly dish these out and a release for v1.0.0 [[View Milestone
     
   - [ ] Finish the following exceptions
     - [ ] `\Exceptions\HTTP`
-    - [ ] `\Exceptions\Intl`
-    - [ ] Add tests for the above
-    
-  - [ ] Create new exception namespaces
-    - [ ] `\Exceptions\Authentication\*`
-    - [ ] `\Exceptions\Authorization\*`
-    - [ ] `\Exceptions\Encryption\*`
     - [ ] Add tests for the above
 
  ## License
