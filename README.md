@@ -8,7 +8,8 @@
 
 ## Synopsis
 `PHP Exceptions` is an attempt to encapsulate a larger variation of exception classes that do not exist 
-within PHP's SPL, and separate them in an orchestrated fashion. 
+within PHP's SPL, and separate them in an orchestrated fashion by containing them within their own 
+`\Exceptions` namespace.
 
 As said by [Arnout Boks](https://www.moxio.com/blog/34/best-practices-for-php-exception-handling):
 
