@@ -36,15 +36,17 @@ trait ExceptionHelpers
      *     }
      * }
      *
-     * @param string      $exception
-     * @param string|null $namespace
+     * @param string      $message   The message for the exception
+     * @param string      $exception The exception class to throw
+     * @param string|null $namespace The optional namespace that exists within 
+     *                               the \Exceptions namespace
      */
-    protected static function throwNew(string $exception = 'RuntimeException', ?string $namespace = null): void
+    protected static function throwNew(string $message, string $exception = 'RuntimeException', ?string $namespace = null): void
     {
         $class = $namespace !== null
             ? '\Exceptions\\' . $namespace . '\\' . $exception
             : '\Exceptions\\' . $exception;
 
-        throw new $class();
+        throw new $class($message);
     }
 }
