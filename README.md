@@ -14,8 +14,8 @@ within PHP's SPL, and separate them in an orchestrated fashion by containing the
 As said by [Arnout Boks](https://www.moxio.com/blog/34/best-practices-for-php-exception-handling):
 
 "_Proper exception handling takes quite some effort, but will eventually result in a much more stable 
-application. **A sensible exception handling strategy makes it clear what exceptions should be expected 
-(and thus handled!) at a given point in the code.** Moreover it will maintain the encapsulation and 
+application._ **A sensible exception handling strategy makes it clear what exceptions should be expected 
+(and thus handled!) at a given point in the code.** _Moreover it will maintain the encapsulation and 
 abstraction you carefully applied to your object-oriented design. Last but not least, it should make 
 debugging a breeze._"
 
