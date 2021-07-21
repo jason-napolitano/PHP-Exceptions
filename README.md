@@ -165,13 +165,6 @@ class ClassName
 }
 ```
 
-## TODO
-Hopefully I can quickly dish these out and a release for v1.0.0 [[View Milestone](https://github.com/jason-napolitano/PHP-Exceptions/milestone/1)]:
-    
-  - [ ] Finish the following exceptions
-    - [ ] `\Exceptions\HTTP`
-    - [ ] Add tests for the above
-
  ## License
  ### MIT License
  
