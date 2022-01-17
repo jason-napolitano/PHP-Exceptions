@@ -70,7 +70,6 @@ Framework versions will be available shortly after the official v.1.0 release.
  - [Useful Links](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#useful-links)
  - [Requirements](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#requirements)
  - [Installation](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#installation)
- - [TODO](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#todo)
  - [License](https://github.com/jason-napolitano/PHP-Exceptions/blob/master/README.md#license)
  
 ### Class Blueprint
