@@ -6,6 +6,9 @@
 [![Build Status](https://travis-ci.com/jason-napolitano/PHP-Exceptions.svg?branch=master)](https://travis-ci.com/jason-napolitano/PHP-Exceptions)
 [![Coverage Status](https://coveralls.io/repos/github/jason-napolitano/PHP-Exceptions/badge.svg?branch=master)](https://coveralls.io/github/jason-napolitano/PHP-Exceptions?branch=development)
 
+## Update:
+**This repository has been archived and for the time being is considered abandonware. Please use at your own discretion.**
+
 ## Synopsis
 `PHP Exceptions` is an attempt to encapsulate a larger variation of exception classes that do not exist 
 within PHP's SPL, and separate them in an orchestrated fashion by containing them within their own 
